@@ -103,7 +103,7 @@ class split_vids:
                 ret, frame = cap.read()
                 frame_cnt += 1
                 if ret:
-                    gray = cv2.cvtColor(src=frame, code=cv2.COLOR_BGR2GRAY)
+                    # gray = cv2.cvtColor(src=frame, code=cv2.COLOR_BGR2GRAY)
 
                     if frame_cnt > fps*60*0 and frame_cnt <= fps*60*1:
                         vw_01.write(frame)
